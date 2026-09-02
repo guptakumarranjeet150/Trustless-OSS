@@ -19,8 +19,6 @@ dist
 /coverage
 
 # Env files
-.env
-.env.local
 .env.*.local
 
 # Logs
@@ -36,7 +34,6 @@ Thumbs.db
 *.pem
 
 # Editor
-.vscode/settings.json
 .idea
 
 # Vercel
@@ -51,3 +48,4 @@ test_snapshot/
 
 # Misc
 .codex
+config.bat

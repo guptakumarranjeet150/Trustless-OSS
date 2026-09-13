@@ -7,9 +7,9 @@
     "node": ">=22"
   },
   "scripts": {
-    "dev": "next dev --webpack",
-    "build": "next build --webpack",
-    "start": "next start",
+    "dev": "node init && next dev --webpack",
+    "build": "node init && next build --webpack",
+    "start": "node init && next start",
     "test": "vitest run",
     "test:coverage": "vitest run --coverage --coverage.enabled=true --coverage.provider=v8 --coverage.include=app/components/escrow/RepositoryEscrowCard.tsx --coverage.include=app/components/escrow/EscrowEventLog.tsx --coverage.include=lib/event-stream.ts --coverage.thresholds.lines=90 --coverage.thresholds.functions=90 --coverage.thresholds.branches=90 --coverage.thresholds.statements=90",
     "lint": "eslint 'app/**/*.{ts,tsx}' 'lib/**/*.{ts,tsx}' --max-warnings=-1",
